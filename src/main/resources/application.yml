@@ -3,17 +3,4 @@ server:
   port: 8182
 
 spring:
-  application:
-      name: jjqnr
-  # 改成自己的数据库，仅需自己创建数据库即可，相关表会自动生成
-  datasource:
-      name: serverbase
-      driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:3306?useUnicode=true&characterEncoding=utf-8
-      username: root
-      password: root
-
-mybatis:
-  mapper-locations: classpath*:mappers/*
-  configuration:
-      mapUnderscoreToCamelCase: true
+  resources.static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:/Users/lzz/work/java/jjqnr/web/dist
